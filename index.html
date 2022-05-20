@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MoviePicker</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./resources/main.js" type="application/javascript" defer></script>
+        <link rel="stylesheet" type="text/css" href="./resources/style.css">
+    </head>
+    <body>
+        <section id="form-section">
+            <h1>MoviePicker</h1>
+            <form>
+                <label>Select a genre:</label>
+                <br><br>
+                <select id="genre" name="genre"></select>
+                <br><br>
+                <button type="submit" id="search-button">Pick a Movie</button>
+            </form>
+        </section>
+        <section id="result-section">
+            <h2 id="movie-title"></h2>
+            <p id="movie-release-year"></p>
+            <figure id="movie-poster"></figure>
+            <p id="movie-overview"></p>
+        </section>        
+    </body>
+</html>
