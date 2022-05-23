@@ -14,8 +14,21 @@ body {
     text-align: center;
 }
 
+section {
+    margin: 1rem auto 7rem;
+    padding: 0 10rem;
+}
+
 h1 {
     font-size: 10rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+p {
+    font-size: 3rem;
 }
 
 label {
@@ -26,6 +39,10 @@ label {
     width: 20vw;
     height: 3rem;
     font-size: 1.5rem;
+}
+
+#movie-poster {
+    width: 50vw;
 }
 
 #search-button {
