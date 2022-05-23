@@ -17,11 +17,13 @@ html {
 body {
     color: var(--main-pink);
     text-align: center;
+    font-family: 'Roboto Mono', monospace;;
 }
 
 h1 {
-    font-size: 10rem;
+    font-size: 8rem;
     margin-bottom: 3rem;
+    font-family: 'Odibee Sans', cursive;
 }
 
 h2 {
@@ -45,6 +47,8 @@ label {
     width: 20vw;
     height: 3rem;
     font-size: 1.5rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
     color: var(--background);
 }
 
@@ -75,6 +79,7 @@ label {
 #search-button {
     font-size: 2rem;
     font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
     padding: 0.3rem;
     background-color: var(--main-pink);
     color: var(--background);
@@ -111,7 +116,7 @@ label {
 
 @media only screen and (max-width: 768px) {
     h1 {
-        font-size: 7rem;
+        font-size: 5rem;
     }
 
     h2, label {
@@ -132,10 +137,6 @@ label {
 }
 
 @media only screen and (max-width: 425px) {
-    h1 {
-        font-size: 5rem;
-    }
-
     h2, label {
         font-size: 2.5rem;
     }
