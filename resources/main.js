@@ -4,7 +4,7 @@ const baseUrl = 'https://api.themoviedb.org/3';
 //DOM Elements
 const searchBtn = document.getElementById('search-button');
 const movieTitle = document.getElementById('movie-title');
-const figure = document.getElementById('movie-figure');
+const moviePoster = document.getElementById('movie-poster');
 const movieOverview = document.getElementById('movie-overview');
 
 //Gets the list of movie genres
@@ -84,10 +84,8 @@ const showMovieInfo = async () => {
 
     //Shows movie poster
     const posterPath = movie.poster_path;
-    const poster = document.createElement('img');
-    poster.setAttribute('src', `http://image.tmdb.org/t/p/original/${posterPath}`);
-    poster.setAttribute('id', 'movie-poster');
-    figure.appendChild(poster);
+    moviePoster.setAttribute('src', `http://image.tmdb.org/t/p/original/${posterPath}`);
+    moviePoster.setAttribute('id', 'movie-poster');
 
     //Shows movie overview
     movieOverview.innerHTML = movie.overview;
