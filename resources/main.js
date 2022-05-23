@@ -4,6 +4,7 @@ const baseUrl = 'https://api.themoviedb.org/3';
 //DOM Elements
 const searchBtn = document.getElementById('search-button');
 const movieTitle = document.getElementById('movie-title');
+const releaseDate = document.getElementById('movie-release-date');
 const moviePoster = document.getElementById('movie-poster');
 const movieOverview = document.getElementById('movie-overview');
 
@@ -77,10 +78,14 @@ const getMovie = async (movieList) => {
 const showMovieInfo = async () => {
     const movieList = await getMoviesByGenre();
     const movie = await getMovie(movieList);
-    console.log(movie);
 
     //Shows movie title
     movieTitle.innerHTML = movie.title;
+
+    //Shows movie release date
+    const date = new Date(movie.release_date);
+    const options = { day: 'numeric', month: 'long', year: 'numeric' };
+    releaseDate.innerHTML = date.toLocaleDateString('en-US', options);
 
     //Shows movie poster
     const posterPath = movie.poster_path;
